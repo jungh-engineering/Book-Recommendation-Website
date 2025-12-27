@@ -44,7 +44,7 @@ async function getBooks() {
                 <p class="author">${book.author}</p>
                 <div class="rating">
                     <span class="stars">★★★★★</span>
-                    <span>$${(Math.random() * 20 + 10).toFixed(2)}</span>
+                    <span>$${(Math.random() * 20 + 10).toFixed(2)} (random price placeholder)</span>
                 </div>
             `;
             grid.appendChild(card);
