@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Book Recommendations</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="nav-back">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </div>
+            <div class="logo">Book Recommendation</div>
+        </header>
+
+        <main>
+            <h1>Personalized Book<br>Recommendations</h1>
+
+            <div class="search-container">
+                <input type="text" id="userPrompt" placeholder="I want a thriller set in Tokyo..." value="I want a thriller set in Tokyo">
+                <button id="searchBtn" onclick="getBooks()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="22" y1="22" x2="19" y2="19"></line>
+                        <circle cx="11" cy="11" r="8"></circle>
+                    </svg>
+                </button>
+            </div>
+
+            <div id="loading" class="hidden">
+                <div class="spinner"></div>
+                <p>Curating your list...</p>
+            </div>
+
+            <div id="resultsGrid" class="grid-container">
+                </div>
+        </main>
+    </div>
+
+    <script src="../static/script.js"></script>
+</body>
+</html>
